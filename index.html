@@ -7,43 +7,57 @@
     <title>Ajal Tandukar | Home</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <div class="text-logo">
-            <div><img class = "logo" src="images/logo.jpg" width="45px" height="45px"></div> 
-            <div class ="text"><span style="font-weight:bolder">Ajal</span> Tandukar</div>
-        </div>
-        <nav>
-            <div class="header-nav">
-                <ul>
-                    <li><a href="#"> About Me </a></li>
-                    <li><a href="#"> Resume </a></li>
-                    <li><a href="#"> Skills </a></li>
-                    <li><a href="#"> Contact </a></li>
-                </ul>
-            </div>    
-        </nav>
+      <div class="top-nav">
+
+        <!-- Website Logo -->
+          <a href="index.html" class="text-logo">
+              <div><img class = "logo" src="images/logo.jpg" width="45px" height="45px"></div> 
+              <div class ="text"><span style="font-weight:bolder">Ajal</span> Tandukar</div>
+          </a>
+
+          <!-- Navigation Bar -->
+          <nav>
+              <div class="header-nav">
+                  <ul>
+                      <li><a id="about"> About Me </a></li>
+                      <li><a id="resume"> Resume </a></li>
+                      <li><a id="certificate"> Certificates </a></li>
+                      <li><a id="skills"> Skills </a></li>
+                      <li><a id="contact"> Contact </a></li>
+                  </ul>
+              </div>    
+          </nav>
+        </div>  
     </header>  
     
     <main class="main-container">
-        <section class="about-me">
+
+      <!-- About Me Section -->
+        <section class="about-me" id="about-section">
             <div class="profile-img">
                 <img src="images/img.jpg" width="300px" height="300px">
             </div>
             <div class="profile-info">
                 <h3 class="profile-headline">Frontend Developer</h3>
                 <h1 class="profile-name">AJAL TANDUKAR</h1>
-                <p class="profile-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum voluptatum molestias quam quos. Tempore, provident facilis. Eaque iste commodi quo iusto! Illo, illum iste! Ad, laboriosam sunt! Rem, exercitationem molestiae!</p>
+                <p class="profile-details">An individual with a fresh skills, determined to work, learn and grow in the developement sector. A fast learner with strong time management and mult-tasking skills with already experience gather from top IT company and always willing to give the best.</p>
                 <div class="details-btn">
-                    <button class="btn download-btn">Download CV</button>
-                    <button class="btn contact-btn">Contact</button>
+                    <a class="btn download-btn" href= "documents/CV.pdf" download >Download CV</a>
+                    <a class="btn contact-btn" id="contact-btn">Contact</a>
                 </div>
             </div>
         </section>
 
-        <section class="resume">
+         <!-- Resume Section -->
+        <section class="resume" id="resume-section">
+
+          <!-- Educational Article -->
+          
             <article class="education-article">
-                <h2>Educution</h2>
+                <h2>Education</h2>
 
                 <div class="resume-list">
                     <div class="year"> 
@@ -52,74 +66,117 @@
                     <span class="place">University of Wolverhampton</span>
                     <div class="details">    
                         <h3>Computer Science</h3>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil ab quaerat laboriosam doloribus, illo unde id magnam cupiditate corrupti maxime saepe facilis non ducimus nesciunt officia iusto quisquam optio?</p>
+                        <p class="description">
+                          Completed the 3 years Software Engineer courses with excellent first division score. Gathered the hands-on skills on many languages like HTML-CSS, JAVA, Python, different databases as well as Project Management. Completed various team projects as well as individuals projects with excellent outcomes. 
+                        </p>
                     </div>
-                </div>     
+                </div>    
+
                 <div class="resume-list">
                     <div class="year"> 
-                        2018 - 2021 
+                        2016 - 2018 
                     </div>
-                    <span class="place">University of Wolverhampton</span>
+                    <span class="place">Trinity International SS/College</span>
                     <div class="details">    
-                        <h3>Computer Science</h3>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil ab quaerat laboriosam doloribus, illo unde id magnam cupiditate corrupti maxime saepe facilis non ducimus nesciunt officia iusto quisquam optio?</p>
+                        <h3>+2 Level </h3>
+                        <p class="description">
+                          Completed High School in Science Faculty (Computer Science) as major subject with excellent 2.81 G.P.A.
+                        </p>
                     </div>
-                </div>   
+                </div>  
+
                 <div class="resume-list">
                     <div class="year"> 
-                        2018 - 2021 
+                        2016 
                     </div>
-                    <span class="place">University of Wolverhampton</span>
+                    <span class="place">Dreamland Public High School</span>
                     <div class="details">    
-                        <h3>Computer Science</h3>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil ab quaerat laboriosam doloribus, illo unde id magnam cupiditate corrupti maxime saepe facilis non ducimus nesciunt officia iusto quisquam optio?</p>
+                        <h3>S.L.C</h3>
+                        <p class="description">
+                          Completed S.L.C with all the compuslory subjects with excellent 3.55 G.P.A.
+                        </p>
                     </div>
                 </div>    
             </article>
+
+            <!-- Experience Article -->
             <article class="experience-article">
                 <h2>Experience</h2>
 
                 <div class="resume-list">
                     <div class="year"> 
-                        2018 - 2021 
+                        Aug 2019 - Jan 2022
                     </div>
-                    <span class="place">University of Wolverhampton</span>
+                    <span class="place">Leapfrog Technology Nepal Pvt. Ltd</span>
                     <div class="details">    
-                        <h3>Computer Science</h3>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil ab quaerat laboriosam doloribus, illo unde id magnam cupiditate corrupti maxime saepe facilis non ducimus nesciunt officia iusto quisquam optio?</p>
+                        <h3>Operation Assistant, Laudio</h3>
+                        <p class="description">
+                          Tasks/Achievements
+                          <ul class="tasks">
+                            <li>Sent out regular emails to customers after the Weekly Data Refresh was completed.</li>
+                            <li>Sent data from the upload center to the application and notifying to the users</li>
+                            <li>Fetch documents from FTP server and upload them to the application.</li>
+                            <li>Created documentations, notes and reports on daily basis</li>
+                          </ul>
+                        </p>
                     </div>
                 </div>   
 
                 <div class="resume-list">
                     <div class="year"> 
-                        2018 - 2021 
+                        Dec 2021 - Jan 2022 
                     </div>
-                    <span class="place">University of Wolverhampton</span>
+                    <span class="place">Leapfrog Technology Nepal Pvt. Ltd</span>
                     <div class="details">    
-                        <h3>Computer Science</h3>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil ab quaerat laboriosam doloribus, illo unde id magnam cupiditate corrupti maxime saepe facilis non ducimus nesciunt officia iusto quisquam optio?</p>
+                        <h3>Intern, Software Engineer</h3>
+                        <p class="description">
+                          Tasks/Achievements
+                          <ul class="tasks">
+                            <li>Pixel perfect design of web pages using HTML, CSS, and vanilla JavaScript</li> 
+                            <li>Prepared lo-fi, estimation and a responsive design of web page Template from Figma</li> 
+                            <li>Developed different games like of Ball Collision, Ant Smasher, 2D Car Game, Flappy Bird using ES6 JavaScript </li>
+                            <li>Developed a final assignment using HTML, CSS, vanilla javascript and canvas.</li>
+                          </ul>
+                        </p>  
                     </div>
                 </div>   
             </article>
         </section>
 
-        <section class="certificate">
+        <!-- Cerificate Section -->
+        <section class="certificate" id="certificate-section">
           <h2>Certificates</h2>
 
           <div class="row">
-            <div class="certificate-list">
-                <h3>Operation Assistant</h3>
-            </div>
-            <div class="certificate-list">
-              <h3>Internship</h3>
-            </div>
+        
+              <a class="certificate-list" href= "documents/Leapfrog Experience Letter.pdf" download >
+                <div class="certi-logo"><img src="images/leapfrog.PNG" height="50px"></div>
+                <div class="certi-info">
+                  <h3>Operation Assistant, Laudio</h3>
+                  <p>Duration: 2.5 years</p>
+                  <p>Fixed-term employee</p>
+                </div>  
+              </a>
+
+            <a class="certificate-list" href= "documents/Leapfrog Internship.pdf" download >
+              <div class="certi-logo"><img src="images/leapfrog.PNG" height="50px"></div>
+              <div class="certi-info">
+                <h3>Intern, Software Engineer</h3>
+                <p>Duration: 6 weeks</p>
+                <p>Internship Training</p>
+              </div>  
+            </a>
+            
           </div>  
         </section>
 
-        <section class="skills"> 
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills-section"> 
             <h2>Skills</h2>
 
             <div class="skill-bars">
+
                 <div class="bar">
                   <div class="info">
                     <span>HTML</span>
@@ -128,6 +185,7 @@
                     <span></span>
                   </div>
                 </div>
+
                 <div class="bar">
                   <div class="info">
                     <span>CSS</span>
@@ -136,14 +194,16 @@
                     <span></span>
                   </div>
                 </div>
+
                 <div class="bar">
                   <div class="info">
-                    <span>jQuery</span>
+                    <span>Javascript</span>
                   </div>
-                  <div class="progress-line jquery">
+                  <div class="progress-line javascript">
                     <span></span>
                   </div>
                 </div>
+
                 <div class="bar">
                   <div class="info">
                     <span>Python</span>
@@ -152,53 +212,63 @@
                     <span></span>
                   </div>
                 </div>
+
                 <div class="bar">
                   <div class="info">
-                    <span>MySQL</span>
+                    <span>JAVA</span>
                   </div>
-                  <div class="progress-line mysql">
+                  <div class="progress-line java">
                     <span></span>
                   </div>
                 </div>
+
+                <div class="bar">
+                  <div class="info">
+                    <span>Database</span>
+                  </div>
+                  <div class="progress-line database">
+                    <span></span>
+                  </div>
+                </div>
+
               </div>
         </section>
 
-        <section class="contact">
+        <!-- Contact Section -->
+        <section class="contact" id="contact-section">
           <h1 style="font-size: 35px;">Contact me</h1>
           <p>Get in touch</p>
 
           <div class="contact-info">
 
             <div class="contact-row">
-            <img src="images/mail-icon.svg" class="icon">
-           <div style="margin-left: 10px;">
-              <h2>Email</h2>
-              <p>ajaltandukar@gmail.com</p>
+              <img src="images/mail-icon.svg" class="icon">
+              <div style="margin-left: 10px;">
+                <h2>Email</h2>
+                <p>ajaltandukar@gmail.com</p>
               </div>
             </div>
 
             <div class="contact-row">
-            <img src="images/phone-icon.svg" class="icon">
+              <img src="images/phone-icon.svg" class="icon">
               <div style="margin-left: 10px;">
                 <h2>Cell</h2>
                 <p>+977 9860441547</p>
               </div>
-
-
-              </div>
+            </div>
             
             <div class="contact-row">
-            <img src="images/location-icon.svg" class="icon">
+              <img src="images/location-icon.svg" class="icon">
               <div style="margin-left: 15px;">
                 <h2>Location</h2>
                 <p>Kathmandu, Nepal</p>
-                </div>
+              </div>
             </div>
-
-        </div>
+          </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="footer-head">
@@ -207,10 +277,11 @@
         </div>  
         <div class="footer-nav">
           <ul class="footer-nav-list">
-            <li><a href="#"> About Me </a></li>
-            <li><a href="#"> Resume </a></li>
-            <li><a href="#"> Skills </a></li>
-            <li><a href="#"> Contact </a></li>
+            <li><a id="about-footer"> About Me </a></li>
+            <li><a id="resume-footer"> Resume </a></li>
+            <li><a id="certificate-footer"> Certificates </a></li>
+            <li><a id="skills-footer"> Skills </a></li>
+            <li><a id="contact-footer"> Contact </a></li>
         </ul>
         </div>
         <div class="footer-link">
@@ -218,35 +289,35 @@
 
             <ul class="footer-link-list">
               <li>
-                <a href="" class="footer-link-list-item">
+                <a href="https://www.facebook.com/ajal.tdr" class="footer-link-list-item">
                   <img src="images/facebook-icon.svg" class="social-icon">
                   <p>Facebook</p>
                 </a>
               </li>
 
               <li>
-                <a href="" class="footer-link-list-item">
+                <a href="https://www.instagram.com/ajaltdr/" class="footer-link-list-item">
                   <img src="images/instagram-icon.svg" class="social-icon">
                   <p>Instagram</p>
                 </a>
               </li>
 
               <li>
-                <a href="" class="footer-link-list-item">
+                <a href="https://twitter.com/ajzertdr" class="footer-link-list-item">
                   <img src="images/twitter-icon.svg" class="social-icon">
                   <p>Twitter</p>
                 </a>
               </li>
 
               <li>
-                <a href="" class="footer-link-list-item">
+                <a href="https://www.linkedin.com/in/ajaltdr/" class="footer-link-list-item">
                   <img src="images/linkedin-icon.svg" class="social-icon">
                   <p>LinkedIn</p>
                 </a>
               </li>
 
               <li>
-                <a href="" class="footer-link-list-item">
+                <a href="https://github.com/ajaltdr" class="footer-link-list-item">
                   <img src="images/github-icon.svg" class="social-icon">
                   <p>Github</p>
                 </a>
@@ -258,4 +329,6 @@
 
     </footer>
 </body>
+
+<script src="script/script.js"></script>
 </html>

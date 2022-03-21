@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;  
-    
 }
 
 body{
@@ -12,7 +11,19 @@ body{
 }
 
 header{
-    padding: 50px 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+}
+
+.top-nav{
+  display: flex;
+  
 }
 
 .text-logo{
@@ -28,29 +39,30 @@ header{
 }
 
 .header-nav{
-    float: right;
+   padding-left: 300px;
 }
 
 .header-nav li{
     margin-right: 80px;
     list-style: none;
     display: inline;
-    color: red;
+    
 } 
 
 .header-nav li a{
     text-decoration: none;
-    color: grey;
+    color: black;
 }
 
 .header-nav li a:hover{
-    color: black;
+    color: #6665ee;
 }
 
 .about-me{
     padding-left: 250px;
-    padding-top: 120px;
+    padding-top: 180px;
     display: flex;
+    margin-bottom: 200px;
 }
 
 .profile-img img{
@@ -92,20 +104,17 @@ header{
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 10px;
+    margin-top: 20px;
   }
 
 .download-btn {
     background-color: #6665ee;
     color: white;
-    
-    
   }
   
 .download-btn:hover {
     background-color: #4a4ac2;
     color: white;
-    
-
   }
 
   .contact-btn {
@@ -121,7 +130,7 @@ header{
   
   .resume{
       display: flex;
-      padding-top: 200px;
+      padding-top: 100px;
   }
 
   .details{
@@ -131,6 +140,7 @@ header{
 
   .education-article{
     padding-left: 80px;
+    padding-right: 50px;
     width: 50%;
   }
 
@@ -151,19 +161,35 @@ header{
     border: 2px solid #6665ee;
   }
 
+  .description{
+    text-align: justify;
+    margin-top: 5px;
+  }
+
   .place{
       color: gray;
       margin-left: 10px;
   }
 
   .experience-article{
-    /* padding-left: 100px; */
+    padding-right: 50px;
     width: 50%;
+  }
+
+  .tasks li {
+    list-style-type: circle;
   }
 
   .certificate{
     padding-left: 80px;
       padding-top: 100px;  
+  }
+
+  .certi-logo{
+    padding: 20px;
+  }
+  .certi-info{
+    padding: 20px;
   }
 
   .row{
@@ -172,14 +198,14 @@ header{
   }
   
   .certificate-list{
-    border: 2px solid grey;
+    border: 2px solid rgb(87, 83, 83);
     border-radius: 6px;
     width: 45%;
     padding: 10px;
     margin-right: 30px;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
     transition: all .3s ease-in-out;
-
+    display: flex;
   }
 
   .certificate-list:hover{
@@ -204,7 +230,7 @@ header{
   }
   .skill-bars{
     padding: 25px 30px;
-    width: 600px;
+    width: 700px;
     background: #fff;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
     border-radius: 10px;
@@ -257,19 +283,22 @@ header{
     animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
   }
   .bar .progress-line.html span{
-    width: 90%;
+    width: 95%;
   }
   .bar .progress-line.css span{
+    width: 80%;
+  }
+  .bar .progress-line.javascript span{
     width: 60%;
   }
-  .bar .progress-line.jquery span{
-    width: 85%;
-  }
   .bar .progress-line.python span{
-    width: 50%;
+    width: 60%;
   }
-  .bar .progress-line.mysql span{
-    width: 75%;
+  .bar .progress-line.java span{
+    width: 55%;
+  }
+  .bar .progress-line.database span{
+    width: 70%;
   }
   .progress-line span::before{
     position: absolute;
@@ -304,19 +333,22 @@ header{
     }
   }
   .progress-line.html span::after{
-    content: "90%";
+    content: "95%";
   }
   .progress-line.css span::after{
+    content: "80%";
+  }
+  .progress-line.javascript span::after{
     content: "60%";
   }
-  .progress-line.jquery span::after{
-    content: "85%";
-  }
   .progress-line.python span::after{
-    content: "50%";
+    content: "60%";
   }
-  .progress-line.mysql span::after{
-    content: "75%";
+  .progress-line.java span::after{
+    content: "55%";
+  }
+  .progress-line.database span::after{
+    content: "70%";
   }
 
   .icon{
@@ -394,8 +426,14 @@ li a{
 
 .copyright-text{
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
   color: #fff;
   display:grid;
   width: 100%;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
 }
