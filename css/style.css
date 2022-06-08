@@ -362,7 +362,7 @@ header{
   }
 
   .contact-info{
-    margin-left: 270px;
+    justify-content:center;
     display: flex;
     margin-top: 50px;
     margin-bottom: 100px;
